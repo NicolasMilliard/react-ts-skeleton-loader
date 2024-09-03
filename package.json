@@ -1,0 +1,42 @@
+{
+  "name": "react-ts-skeleton-loader",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "version": "0.0.1",
+  "description": "React TS Skeleton Loader is a React component that simplifies the integration of custom animated skeletons for loading states. It's particularly effective with text elements, as it automatically adjusts to the font size and line height of your content. It can also be easily adapted for use with other elements, such as images.",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts && pnpm run copy:css",
+    "copy:css": "cp dist/index.css dist/Skeleton.css",
+    "lint": "tsc",
+    "ci": "pnpm run lint && pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasMilliard/react-ts-skeleton-loader.git"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "skeleton",
+    "loader",
+    "typescript"
+  ],
+  "author": "Nicolas Milliard",
+  "devDependencies": {
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  }
+}

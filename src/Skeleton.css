@@ -1,0 +1,29 @@
+.rtsl-skeleton-loader {
+  --skeleton-background: #e0e0e0;
+  --skeleton-shine: #f0f0f0;
+  background: linear-gradient(
+    90deg,
+    var(--skeleton-background) 25%,
+    var(--skeleton-shine) 50%,
+    var(--skeleton-background) 75%
+  );
+  background-size: 200% 100%;
+}
+
+.rtsl-skeleton-loader.animated {
+  animation: progress 3s linear infinite;
+}
+
+.rtsl-skeleton-loader:not(.animated) {
+  background-size: 100% 100%;
+}
+  
+@keyframes progress {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+  
