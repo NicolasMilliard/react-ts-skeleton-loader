@@ -1,5 +1,6 @@
 .rtsl-skeleton-loader {
-  display: inline-block;
+  display: block;
+  margin-bottom: 0.6rem;
   position: relative;
   overflow: hidden;
 }
@@ -13,9 +14,9 @@
   left: -30rem;
   background-image: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0)
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0.6),
+    hsla(0, 0%, 100%, 0)
   );
   animation: progress 1.2s ease-in-out infinite;
 }
